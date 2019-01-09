@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'color-picker';
+  title = 'Color Picker';
+  pickedColor = '#ff0080';
+
+  onPickColor(payload) {
+    this.pickedColor = payload;
+  }
 }
